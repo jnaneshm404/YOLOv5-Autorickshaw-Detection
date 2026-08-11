@@ -1,0 +1,18 @@
+YOLOv5 Autorickshaw Detection - Commands Used
+
+1. Install YOLOv5:
+git clone https://github.com/ultralytics/yolov5.git
+cd yolov5
+pip install -r requirements.txt
+
+2. Train Custom Model:
+python train.py --img 640 --batch 16 --epochs 50 --data datasets/autorickshaw/data.yaml --weights yolov5s.pt --name autorickshaw_model
+
+3. Detect using Trained Model (Webcam):
+python detect.py --weights best.pt --source 0 --conf 0.4
+
+4. Detect on Images:
+python detect.py --weights best.pt --source datasets/autorickshaw/test/images --conf 0.4
+
+5. Detect on Video:
+python detect.py --weights best.pt --source your_video.mp4 --conf 0.4

@@ -1,0 +1,6 @@
+train: datasets/autorickshaw/train/images
+val: datasets/autorickshaw/valid/images
+test: datasets/autorickshaw/test/images
+
+nc: 1
+names: ['Autorickshaw']

@@ -16,7 +16,7 @@ This project implements a real-time object detection system using YOLOv5 for the
 
 ## Model
 - Base Model: YOLOv5s
-- Trained for 50 epochs
+- Trained for 100 epochs
 - Best weights saved as best.pt
 
 ## How to Run Detection
